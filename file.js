@@ -2,18 +2,6 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/12.7.0/firebas
 import { getAuth, GoogleAuthProvider, signInWithPopup, signOut as firebaseSignOut } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-auth.js";
 import { getDatabase, ref, set, push, onValue } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-database.js";
 
-// Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyDOnvbi1fqOeJHNTe2vVW5aFHv9c_GZNSE",
-  authDomain: "storagejs-38f04.firebaseapp.com",
-  projectId: "storagejs-38f04",
-  storageBucket: "storagejs-38f04.firebasestorage.app",
-  messagingSenderId: "284409219716",
-  appId: "1:284409219716:web:4bc373a23e07f200ab50d1",
-  measurementId: "G-8HPXZLSXZN",
-  databaseURL: "https://storagejs-38f04-default-rtdb.asia-southeast1.firebasedatabase.app"
-};
-
 // Firebase setup
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();
