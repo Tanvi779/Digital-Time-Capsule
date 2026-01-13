@@ -110,7 +110,7 @@ To use the **Digital Time Capsule** app, you'll need to set up **Firebase**. Her
 
 3. **Create `config.js`:**
 
-   * Create a file called `firebaseConfig.js` in the root of the project and paste the config you copied inside.
+   * Create a file called `config.js` in the root of the project and paste the config you copied inside.
 
      ```javascript
      // config.js
