@@ -83,6 +83,51 @@ With the **Digital Time Capsule**, you can:
 
 ---
 
+### **Firebase Setup** 🔑
+
+To use the **Digital Time Capsule** app, you'll need to set up **Firebase**. Here’s how you can do that:
+
+1. **Create a Firebase Project:**
+
+   * Go to the [Firebase Console](https://console.firebase.google.com/).
+   * Create a new Firebase project or use an existing one.
+
+2. **Get Your Firebase API Keys:**
+
+   * Go to **Project Settings** > **General** > **Firebase SDK Snippet** and copy the config object. It should look like this:
+
+     ```javascript
+     const firebaseConfig = {
+         apiKey: "YOUR_API_KEY",
+         authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+         databaseURL: "https://YOUR_PROJECT_ID.firebaseio.com",
+         projectId: "YOUR_PROJECT_ID",
+         storageBucket: "YOUR_PROJECT_ID.appspot.com",
+         messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+         appId: "YOUR_APP_ID"
+     };
+     ```
+
+3. **Create `config.js`:**
+
+   * Create a file called `firebaseConfig.js` in the root of the project and paste the config you copied inside.
+
+     ```javascript
+     // config.js
+
+     const firebaseConfig = {
+         apiKey: "YOUR_API_KEY",
+         authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+         databaseURL: "https://YOUR_PROJECT_ID.firebaseio.com",
+         projectId: "YOUR_PROJECT_ID",
+         storageBucket: "YOUR_PROJECT_ID.appspot.com",
+         messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+         appId: "YOUR_APP_ID"
+     };
+
+     export default firebaseConfig;
+     ```
+
 ### **Roadmap** 🛤️
 
 * **Phase 1**: Make it work (done!).
